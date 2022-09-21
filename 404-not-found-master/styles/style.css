@@ -1,34 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Space Mono', monospace;
   }
 
-  ul {
-    padding-left: 24px;
-  }
 
-  li {
-    margin-bottom: 8px;
-  }
+h1{
+    font-size: 3.2rem;
+    color: #333333;
+}
 
-  .welcome {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .welcome-text {
-    margin-top: 30vh;
-    font-weight: 500;
-  }
-
-  .welcome-text p {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
-  .welcome-text h1 {
+h3{
     font-size: 1.5rem;
-  }
+    padding-left: 2rem;
+}
 
-  .welcome-text a {
-    color: #f7542e;
-  }
+.text{
+    width: 30rem;
+    color: #4F4F4F;
+    font-size: 1.5rem;
+    line-height: 40px;
+    padding-bottom: 2rem;
+}
+
+main{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image img{
+    height: 20rem;
+}
+
+.button-back{
+    font-size: 1rem;
+    background-color: #333333;
+    color: #fff;
+    width: 12rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+
+@media(min-width:40em){
+    .content{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    }
+    .message{
+        text-align: left;
+        width: 30rem;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div p{
+    text-align: center;
+    color: #4F4F4F;
+}
